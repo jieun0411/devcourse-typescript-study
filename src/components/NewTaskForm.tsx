@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { FormEvent, useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTask } from '../redux/tasks/actions';
+import { addTask } from "../redux/tasks";
 
 const NewTaskForm = (props: any) => {
   const [task, setTask] = useState("");
