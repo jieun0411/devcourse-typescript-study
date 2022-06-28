@@ -1,9 +1,10 @@
 import styled from "@emotion/styled"
-import { useTasks } from '../contexts/TaskProvider';
+import { useSelector } from "react-redux";
 import Task from "./Task";
+import { RootState } from "../redux";
 
 const TaskList = () => {
-    const { tasks } = useTasks();
+    const tasks = useSelector((store: RootState) => store.tasks)
 
     return (
         <UnorderedList>
