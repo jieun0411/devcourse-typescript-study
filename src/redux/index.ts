@@ -11,7 +11,7 @@ const persistConfig = {
     whitelist: ['tasks'],
 }
 
-const combinedReducer = combineReducers({tasks});
+const combinedReducer = combineReducers({tasks: tasks.reducer});
 
 const rootReducer = persistReducer(persistConfig, combinedReducer)
 
